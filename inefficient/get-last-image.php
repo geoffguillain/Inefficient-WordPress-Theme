@@ -5,7 +5,7 @@ function iwt_get_last_image( $post_id ) {
         'order'          => 'DESC',
         'post_mime_type' => 'image',
         'post_parent'    => $post_id,
-        'post_status'    => null,
+        'post_status'    => inherit,
         'post_type'      => 'attachment',
     );
  
