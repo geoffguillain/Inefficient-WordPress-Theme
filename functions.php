@@ -175,3 +175,4 @@ require get_template_directory() . '/inefficient/get-stats.php';
 require get_template_directory() . '/inefficient/get-last-image.php';
 require get_template_directory() . '/inefficient/get-some-posts.php';
 require get_template_directory() . '/inefficient/posts-for-homepage.php';
+require get_template_directory() . '/inefficient/get-rss-feeds.php';
