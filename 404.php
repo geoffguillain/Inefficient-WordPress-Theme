@@ -48,6 +48,7 @@ get_header();
 					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$iwt_archive_content" );
 
 					the_widget( 'WP_Widget_Tag_Cloud' );
+					the_widget( 'IWP_Widget' );
 					?>
 
 				</div><!-- .page-content -->
