@@ -14,9 +14,8 @@ function iwt_get_stats( $post_type = 'post', $year = null ) {
 			),
     	);
 		$posts = new WP_Query( $args ); 
-        set_transient( 'posts-stats-' . $post_type, $posts, 5 );
+        set_transient( 'posts-stats-' . $post_type, $posts, 2 HOUR_IN_SECONDS );
     }
  
     return $posts->post_count;
 }
-
