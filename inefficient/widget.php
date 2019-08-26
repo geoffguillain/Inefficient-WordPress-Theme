@@ -20,7 +20,7 @@ class IWP_Widget extends WP_Widget {
 	 * @param array $instance
 	 */
 	public function widget( $args, $instance ) {
-		// outputs the content of the widget
+		// outputs the content of the widget.
 		$query = new WP_Query( array( 's' => 'test', 'posts_per_page' => 3, 'orderby' => 'rand' ) );
 		
 		if ( $query->have_posts() ) {
@@ -35,6 +35,9 @@ class IWP_Widget extends WP_Widget {
 
 }
 
-add_action( 'widgets_init', function(){
-	register_widget( 'IWP_Widget' );
-});
+add_action( 
+	'widgets_init',
+	function() {
+		register_widget( 'IWP_Widget' );
+	}
+);

@@ -16,10 +16,11 @@ function iwt_last_posts() {
 					<?php the_post_thumbnail( 'small' ); ?>
 				</a>
 				<div class="iwt-card__text">
-					<h3 class="iwt-card__title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
+					<h3 class="iwt-card__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				</div >
 			</div>
 
 		<?php endwhile; ?>
-	<?php endif; 
+		<?php 
+	endif; 
 }

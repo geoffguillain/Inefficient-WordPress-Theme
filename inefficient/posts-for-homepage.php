@@ -13,6 +13,7 @@ function iwt_posts_for_homepage() {
 			),
 		),
 	);
+
 	$query = new WP_Query( $args );
 
 	return $query;

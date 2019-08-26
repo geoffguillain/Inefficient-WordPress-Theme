@@ -30,7 +30,7 @@ function get_rss_feeds() {
 			<?php foreach ( $rss_items as $item ) : ?>
 				<li>
 					<a href="<?php echo esc_url( $item->get_permalink() ); ?>"
-						title="<?php echo 'Posted ' . esc_html( $item->get_date('j F Y | g:i a') ); ?>">
+						title="<?php echo 'Posted ' . esc_html( $item->get_date( 'j F Y | g:i a' ) ); ?>">
 						<?php echo esc_html( $item->get_title() ); ?>
 					</a>
 				</li>
