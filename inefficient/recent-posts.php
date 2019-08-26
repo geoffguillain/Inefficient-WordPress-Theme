@@ -2,13 +2,13 @@
 
 function iwt_last_posts() {
 	$args = array(
-		'post_type'        => 'post',
-		'posts_per_page'   => 3,
+		'post_type'      => 'post',
+		'posts_per_page' => 3,
 	);
 
 	$query = get_posts( $args );
 
-	if ( $query->have_posts() ): 
+	if ( $query->have_posts() ) : 
 		while ( $query->have_posts() ) : $query->the_post(); ?>
 
 			<div class="iwt-card">
