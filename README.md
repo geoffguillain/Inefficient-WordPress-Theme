@@ -7,7 +7,7 @@ Imagine that another developer has asked you to look at a theme that is currentl
 
 ## How to review it?
 
-Feel free to fork the theme or clone it to your local environment. The theme does not have any front end output, all the code that needs to be reviewed stands in the `./inneficient/` folder so you should focus your review there. All the functions are working and return the right results but all of them would tremendously slow the website at scale.
+Feel free to fork the theme or clone it to your local environment. The theme does not have any front end output, all the code that needs to be reviewed stands in the `./inefficient/` folder so you should focus your review there. All the functions are working and return the right results but all of them would tremendously slow the website at scale.
 
 
 ## Recommended Tools
